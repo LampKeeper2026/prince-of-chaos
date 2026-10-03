@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prince of Chaos ― 混沌迷宮と呪いの王子｜Android ダンジョンRPG</title>
+<meta name="description" content="名を呼ばれなかった三男は、やがて「呪いの王子」と呼ばれた。一人称の格子迷宮を進む Android 向けダンジョンRPG『Prince of Chaos』。全編1,500円の買い切り（第1章は購入前に体験可能）。広告・サブスクなし。">
+<meta name="theme-color" content="#0a0d1a">
+<link rel="canonical" href="https://kamoshika9999.github.io/prince-of-chaos/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kamoshika9999.github.io/prince-of-chaos/">
+<meta property="og:site_name" content="Prince of Chaos">
+<meta property="og:title" content="Prince of Chaos ― 混沌迷宮と呪いの王子">
+<meta property="og:description" content="名を呼ばれなかった三男は、やがて「呪いの王子」と呼ばれた。――なぜ？ 一人称の格子迷宮を進む Android 向けダンジョンRPG。">
+<meta property="og:image" content="https://kamoshika9999.github.io/prince-of-chaos/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Shippori+Mincho:wght@400;600;800&family=Zen+Antique&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <a class="brand" href="#top" aria-label="Prince of Chaos トップへ">
+    <img src="img/icon-192.png" alt="" width="36" height="36">
+    <span>PRINCE OF CHAOS</span>
+  </a>
+  <button class="nav-toggle" aria-label="メニュー" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  <nav id="nav" class="nav">
+    <a href="#story">ものがたり</a>
+    <a href="#characters">登場人物</a>
+    <a href="#dungeon">迷宮と魔物</a>
+    <a href="#features">特徴</a>
+    <a href="#gallery">画面</a>
+    <a href="#download" class="nav-cta">遊ぶ</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ヒーロー -->
+<section class="hero" id="hero">
+  <div class="hero-bg" style="background-image:url('video/mv-poster.jpg')"></div>
+  <video class="hero-video" id="hero-video" src="video/mv.mp4" poster="video/mv-poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="オープニングMV『The Azure Mantle』"></video>
+  <div class="hero-veil"></div>
+  <button class="mv-sound" id="mv-sound" aria-pressed="false"><i aria-hidden="true"></i><span>音を出してMVを見る</span></button>
+  <div class="hero-body">
+    <p class="hero-sup">Android Dungeon RPG</p>
+    <h1 class="hero-title">
+      <span class="en">PRINCE OF CHAOS</span>
+      <span class="ja">混沌迷宮と呪いの王子</span>
+    </h1>
+    <p class="hero-copy">名を呼ばれなかった三男は、<br class="sp">やがて「呪いの王子」と呼ばれた。</p>
+    <p class="hero-hook">――なぜ？</p>
+    <div class="wedges" aria-hidden="true">
+      <i style="--c:#d0473f"></i><i style="--c:#e2bd5e"></i><i style="--c:#a1a7b3"></i><i style="--c:#d8a24f"></i><i style="--c:#7fb4d8"></i><i style="--c:#9fdcf0"></i><i style="--c:#9b78e6"></i>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-gold play-link" href="#download">迷宮へ降りる</a>
+      <a class="btn btn-ghost" href="#mysteries">この物語の謎</a>
+    </div>
+    <p class="hero-note">全編 1,500円（買い切り）／ 第1章は購入前に体験可能 ／ 広告・サブスクなし</p>
+  </div>
+  <a class="scroll-cue" href="#intro" aria-label="下へ"><span></span></a>
+</section>
+
+<!-- 導入 -->
+<section class="intro" id="intro">
+  <div class="container narrow reveal">
+    <p class="kicker">INTRODUCTION</p>
+    <h2 class="sec-title">灯の消えた城と、<br class="sp">余り物の王子</h2>
+    <p class="lead">
+      継承式典で、ただひとり名を呼ばれなかった辺境伯家の三男リュカ。<br>
+      彼の耳には、ときおり誰にも聞こえない「鼓動」が届く。
+    </p>
+    <p>
+      地の底には、魔物のひしめく迷宮が口を開けている。<br>
+      災いが起きるたび、民はリュカを指さすようになった。<br>
+      あれが<strong>「呪いの王子」</strong>だ、と。
+    </p>
+    <p>
+      母の外套と、口をきく黒猫だけを連れて、<br>
+      少年は迷宮へ降りていく。
+    </p>
+  </div>
+</section>
+
+<!-- 謎 -->
+<section class="mysteries" id="mysteries">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="kicker">MYSTERIES</p>
+      <h2 class="sec-title">この物語には、<br class="sp">まだ答えのない問いがある</h2>
+    </div>
+    <ol class="mystery-list reveal">
+      <li><span>壱</span><p>なぜ、彼は<br>「呪いの王子」と呼ばれたのか。</p></li>
+      <li><span>弐</span><p>誰にも聞こえない鼓動は、<br>誰のものなのか。</p></li>
+      <li><span>参</span><p>口をきく黒猫は、<br>なぜ彼を守るのか。</p></li>
+      <li><span>肆</span><p>迷宮の底で、<br>何が待っているのか。</p></li>
+    </ol>
+    <p class="mystery-foot reveal">最初の答えは、<strong>第1章</strong>で。<br class="sp">残りの答えは、その先の迷宮で。</p>
+  </div>
+</section>
+
+<!-- ものがたり -->
+<section class="story" id="story">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="kicker">STORY</p>
+      <h2 class="sec-title">ものがたり</h2>
+      <p class="sec-desc">紙芝居のように一枚絵と語りで綴られる群像劇。<br class="pc">タイトル画面の「ものがたり」から、いつでも振り返れます。</p>
+    </div>
+
+    <div class="story-viewer reveal">
+      <div class="story-stage">
+        <figure class="story-pic active" data-ch="0"><img src="img/story/prologue.jpg" alt="序章：薄暮の出立" loading="lazy"></figure>
+        <figure class="story-pic" data-ch="1"><img src="img/story/ch1.jpg" alt="第1章：燃える王都" loading="lazy"></figure>
+      </div>
+
+      <div class="story-text">
+        <article class="story-card active" data-ch="0">
+          <p class="ch-num">序章</p>
+          <h3>余り物の旅立ち</h3>
+          <p>長男は領を、次男は軍を継いだ。三男リュカの名は、最後まで呼ばれなかった。家を出た夜、肩に乗った黒猫が口をきく。「魚をよこせ。代わりに、死なない程度には守ってやる」</p>
+        </article>
+        <article class="story-card" data-ch="1">
+          <p class="ch-num">第1章</p>
+          <h3>呪いの王子誕生</h3>
+          <p>建国祭の夜、王都が炎に包まれる。燃え落ちる城の地下水路で、リュカは王女エリアーナと出会う。そしてこの夜を境に、人々は彼をこう呼びはじめる――「呪いの王子」と。</p>
+        </article>
+        <div class="story-nav">
+          <button class="story-prev" aria-label="前の章">‹</button>
+          <ol class="story-dots" aria-label="章を選ぶ">
+            <li><button class="active" data-ch="0" aria-label="序章"></button></li>
+            <li><button data-ch="1" aria-label="第1章"></button></li>
+          </ol>
+          <button class="story-next" aria-label="次の章">›</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-locked reveal">
+      <h3 class="sub-title">物語の全貌</h3>
+      <ol class="chapter-map" aria-label="序章から終章">
+        <li class="open"><img src="img/story/prologue.jpg" alt="" loading="lazy"><span>序章</span><b>薄暮の出立</b></li>
+        <li class="open"><img src="img/story/ch1.jpg" alt="" loading="lazy"><span>第1章</span><b>燃える王都</b></li>
+        <li class="sealed"><img src="img/story/sealed/s1.jpg" alt="" loading="lazy"><span>？？？</span></li>
+        <li class="sealed"><img src="img/story/sealed/s2.jpg" alt="" loading="lazy"><span>？？？</span></li>
+        <li class="sealed"><img src="img/story/sealed/s3.jpg" alt="" loading="lazy"><span>？？？</span></li>
+        <li class="beyond" aria-label="さらに先へ"><span>……</span></li>
+      </ol>
+      <p class="map-note"><span>ここから先は、封印されている。</span>その先に、<strong>すべての答え</strong>がある。</p>
+      <a class="btn btn-gold play-link" href="#download">物語の続きを確かめる</a>
+    </div>
+  </div>
+</section>
+
+<!-- 登場人物 -->
+<section class="characters" id="characters">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="kicker">CHARACTERS</p>
+      <h2 class="sec-title">登場人物</h2>
+      <p class="sec-desc">余り物の王子と、口の悪い黒猫と、炎の夜に出会う王女。</p>
+    </div>
+
+    <div class="chara-viewer reveal">
+      <div class="chara-portrait">
+        <img id="chara-img" src="img/chara/lucas.jpg" alt="リュカ" width="600" height="800">
+      </div>
+      <div class="chara-info">
+        <p class="chara-role" id="chara-role">主人公 ／ 辺境伯家の三男</p>
+        <h3 class="chara-name"><span id="chara-name">リュカ</span><small id="chara-en">LUCAS</small></h3>
+        <p class="chara-quote" id="chara-quote">「……置いていかない」</p>
+        <p class="chara-desc" id="chara-desc">継承式典で名を呼ばれなかった18歳の「余り物」。口数は少ないが、目の前の誰かを見捨てない。ときおり、誰にも聞こえない鼓動を耳にする。</p>
+        <ul class="chara-list" role="tablist" aria-label="登場人物を選ぶ">
+          <li><button class="active" data-i="0"><img src="img/chara/lucas.jpg" alt="" loading="lazy"><span>リュカ</span></button></li>
+          <li><button data-i="1"><img src="img/chara/kuro.jpg" alt="" loading="lazy"><span>クロ</span></button></li>
+          <li><button data-i="2"><img src="img/chara/eliana.jpg" alt="" loading="lazy"><span>エリアーナ</span></button></li>
+        </ul>
+        <div class="chara-unknown">
+          <ul aria-hidden="true"><li></li><li></li><li></li><li></li></ul>
+          <p>まだ明かせない出会いが、この先に。<br>その顔と名前は、迷宮の中で。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 迷宮と魔物 -->
+<section class="dungeon" id="dungeon">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="kicker">DUNGEON &amp; MONSTERS</p>
+      <h2 class="sec-title">迷宮と魔物</h2>
+      <p class="sec-desc">一歩ずつ、方眼の闇を踏みしめて進む。<br class="pc">回転床、ワープ、暗闇、落とし穴――底の見えない迷宮が、灯を求める者を拒む。</p>
+    </div>
+
+    <div class="floors reveal">
+      <figure><img src="img/dungeon/crypt.jpg" alt="納骨堂" loading="lazy"><figcaption><b>CRYPT</b>納骨堂</figcaption></figure>
+      <figure><img src="img/dungeon/aqueduct.jpg" alt="地下水路" loading="lazy"><figcaption><b>AQUEDUCT</b>地下水路</figcaption></figure>
+      <figure class="veiled"><img src="img/dungeon/depths.jpg" alt="迷宮の最深部（非公開）" loading="lazy"><figcaption><b>？？？</b>最深部</figcaption></figure>
+    </div>
+
+    <h3 class="sub-title reveal">待ち受ける魔物たち</h3>
+    <p class="monsters-lead reveal">その正体は、出会うまでわからない。</p>
+    <div class="monsters reveal">
+      <figure><img src="img/monster/m1.jpg" alt="" loading="lazy"><figcaption>？？？</figcaption></figure>
+      <figure><img src="img/monster/m2.jpg" alt="" loading="lazy"><figcaption>？？？</figcaption></figure>
+      <figure><img src="img/monster/m3.jpg" alt="" loading="lazy"><figcaption>？？？</figcaption></figure>
+      <figure><img src="img/monster/m4.jpg" alt="" loading="lazy"><figcaption>？？？</figcaption></figure>
+      <figure><img src="img/monster/m5.jpg" alt="" loading="lazy"><figcaption>？？？</figcaption></figure>
+      <figure><img src="img/monster/m6.jpg" alt="" loading="lazy"><figcaption>？？？</figcaption></figure>
+      <figure><img src="img/monster/m7.jpg" alt="" loading="lazy"><figcaption>？？？</figcaption></figure>
+      <figure><img src="img/monster/m8.jpg" alt="" loading="lazy"><figcaption>？？？</figcaption></figure>
+      <figure class="boss"><img src="img/monster/boss.jpg" alt="" loading="lazy"><figcaption>深淵に君臨するもの</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 特徴 -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="kicker">FEATURES</p>
+      <h2 class="sec-title">ゲームの特徴</h2>
+    </div>
+
+    <div class="feature reveal">
+      <figure class="feature-shot"><img src="img/shots/05_maze.jpg" alt="迷宮探索の画面" loading="lazy"></figure>
+      <div class="feature-text">
+        <p class="feature-no">01</p>
+        <h3>一人称で挑む、格子の迷宮</h3>
+        <p>正面の景色と方眼の地図を頼りに、迷宮を一歩ずつ踏破する本格ダンジョン探索。歩いたマスは自動で地図に記録され、SELECT で全画面の地図と5種類の目印を使えます。回転床やワープで現在地を見失ったら、呪文や階段で把握し直すのがこの迷宮の流儀です。</p>
+      </div>
+    </div>
+
+    <div class="feature rev reveal">
+      <figure class="feature-shot"><img src="img/shots/07_battle.jpg" alt="戦闘の画面" loading="lazy"></figure>
+      <div class="feature-text">
+        <p class="feature-no">02</p>
+        <h3>6人パーティのコマンド戦闘</h3>
+        <p>戦士・盗賊・僧侶・魔法使い――種族・性格・目標の職業・能力値を1画面で決めて仲間を作り、最大6人で迷宮に挑むターン制バトル。魔物は発光演出つきの原画で現れます。戦闘速度の調整や「くりかえす」で、テンポよく遊べます。</p>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <figure class="feature-shot"><img src="img/shots/09_chronicle.jpg" alt="ものがたり回想の画面" loading="lazy"></figure>
+      <div class="feature-text">
+        <p class="feature-no">03</p>
+        <h3>紙芝居で語られる物語</h3>
+        <p>静止画と語り、ゆっくりとしたカメラワークと鼓動の演出で見せる「紙芝居」スタイル。見届けた物語は、タイトル画面の「ものがたり」からいつでも振り返れます。</p>
+      </div>
+    </div>
+
+    <div class="feature-grid reveal">
+      <div class="mini">
+        <h4>すべて書き下ろしの音楽</h4>
+        <p>BGM・ジングル・効果音はすべて独自曲。アプリ内で合成し、「ごうか／オリジナル」の音質切替と11段階の音量調整に対応。</p>
+      </div>
+      <div class="mini">
+        <h4>トロフィー</h4>
+        <p>実績を達成すると画面上部でお知らせ。タイトル画面や設定からいつでも一覧を確認できます。</p>
+      </div>
+      <div class="mini">
+        <h4>安心のセーブ</h4>
+        <p>3つのセーブスロットと自動バックアップ。アプリを裏に回すと自動でセーブします。</p>
+      </div>
+      <div class="mini">
+        <h4>遊びやすさへのこだわり</h4>
+        <p>「さいきょうそうび」「みんなで とまる」「おまかせ」編成、メッセージログ、装備比較など、手間を減らす機能を多数搭載。</p>
+      </div>
+      <div class="mini">
+        <h4>タッチもゲームパッドも</h4>
+        <p>画面のボタンに加え、Bluetooth / USB のゲームパッドとキーボードに対応。ボタンの大きさや濃さも変えられます。</p>
+      </div>
+      <div class="mini">
+        <h4>日本語・英語にローカライズ</h4>
+        <p>物語・画面・オープニングの歌まで、日本語と英語の両方に対応。端末の言語に合わせて自動で切り替わり、設定からいつでも変えられます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 画面ギャラリー -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="kicker">SCREENSHOTS</p>
+      <h2 class="sec-title">ゲーム画面</h2>
+      <p class="sec-desc">画像を押すと大きく表示します。</p>
+    </div>
+    <div class="shots reveal">
+      <button class="shot" data-src="img/shots/01_title.jpg" data-cap="タイトル画面"><img src="img/shots/01_title.jpg" alt="タイトル画面" loading="lazy"></button>
+      <button class="shot" data-src="img/shots/05_maze.jpg" data-cap="迷宮探索"><img src="img/shots/05_maze.jpg" alt="迷宮探索" loading="lazy"></button>
+      <button class="shot" data-src="img/shots/07_battle.jpg" data-cap="戦闘"><img src="img/shots/07_battle.jpg" alt="戦闘" loading="lazy"></button>
+      <button class="shot" data-src="img/shots/09_chronicle.jpg" data-cap="ものがたり回想"><img src="img/shots/09_chronicle.jpg" alt="ものがたり回想" loading="lazy"></button>
+      <button class="shot" data-src="img/shots/14_inn.jpg" data-cap="宿屋"><img src="img/shots/14_inn.jpg" alt="宿屋" loading="lazy"></button>
+      <button class="shot" data-src="img/shots/04_status.jpg" data-cap="ステータス"><img src="img/shots/04_status.jpg" alt="ステータス" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<!-- 価格・ダウンロード -->
+<section class="download" id="download">
+  <div class="download-bg" style="background-image:url('img/dungeon/depths.jpg')"></div>
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="kicker">DOWNLOAD</p>
+      <h2 class="sec-title">第1章の終わりで、<br class="sp">きっと続きが見たくなる。</h2>
+      <p class="sec-desc">第1章は、購入前に最後まで遊べます。続きを選ぶのは、その目で確かめてから。</p>
+    </div>
+
+    <div class="price-cards reveal">
+      <div class="price-card">
+        <p class="price-label">STEP 1 ／ 体験</p>
+        <p class="price">第1章</p>
+        <p>「呪いの王子」と呼ばれる夜を、その目で。<br>ダウンロード後、城と第1章の迷宮を最後まで遊べます。</p>
+      </div>
+      <div class="price-card featured">
+        <p class="price-label">STEP 2 ／ 全編解放（買い切り）</p>
+        <p class="price">1,500<small>円（税込）</small></p>
+        <p>同じセーブのまま、その先の物語へ。<br>残りの謎の答えは、すべてここに。</p>
+      </div>
+      <div class="price-card">
+        <p class="price-label">そのあとは</p>
+        <p class="price">0<small>円</small></p>
+        <p>広告・サブスクリプション・ガチャは一切なし。<br>一度買えば、最後まで遊べます。</p>
+      </div>
+    </div>
+
+    <div class="download-cta reveal">
+      <a class="btn btn-gold btn-lg play-link" href="#download">Google Play で遊ぶ</a>
+      <p class="play-status" id="play-status">近日配信予定</p>
+    </div>
+
+    <dl class="spec reveal">
+      <div><dt>タイトル</dt><dd>Prince of Chaos（混沌迷宮と呪いの王子）</dd></div>
+      <div><dt>ジャンル</dt><dd>ダンジョンRPG ／ ビジュアルノベルRPG</dd></div>
+      <div><dt>対応機種</dt><dd>Android 8.0 以上</dd></div>
+      <div><dt>価格</dt><dd>基本無料（全編解放 1,500円・買い切り）</dd></div>
+      <div><dt>言語</dt><dd>日本語 ／ 英語</dd></div>
+      <div><dt>通信</dt><dd>プレイに通信は不要（購入・復元時を除く）</dd></div>
+      <div><dt>データ</dt><dd>セーブ等は端末内のみ。広告・解析SDKなし</dd></div>
+      <div><dt>開発</dt><dd>Lampkeep</dd></div>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-title">PRINCE OF CHAOS</p>
+    <ul class="footer-links">
+      <li><a href="https://kamoshika9999.github.io/prince-of-chaos-privacy/" target="_blank" rel="noopener">プライバシーポリシー</a></li>
+      <li><a href="mailto:hosokawamamoru.mh@gmail.com">お問い合わせ</a></li>
+    </ul>
+    <p class="footer-note">Google Play および Google Play ロゴは Google LLC の商標です。</p>
+    <p class="copyright">&copy; 2026 Lampkeep</p>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+  <p><b>その答えは、迷宮の底で。</b><span>全編 1,500円・買い切り</span></p>
+  <a class="btn btn-gold play-link" href="#download" tabindex="-1">遊ぶ</a>
+</div>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="閉じる">&times;</button>
+  <button class="lb-prev" aria-label="前へ">‹</button>
+  <figure><img id="lb-img" src="" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-next" aria-label="次へ">›</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
