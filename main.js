@@ -41,31 +41,33 @@
   const hero = document.getElementById("hero");
   const mv = document.getElementById("hero-video");
   const mvButton = document.getElementById("mv-sound");
-  const mvLabel = mvButton.querySelector("span");
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (mv && mvButton) {
+    const mvLabel = mvButton.querySelector("span");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  const setSound = (on) => {
-    mv.muted = !on;
-    mv.loop = !on;
-    hero.classList.toggle("mv-on", on);
-    mvButton.setAttribute("aria-pressed", String(on));
-    mvLabel.textContent = on ? "音を消す" : "音を出してMVを見る";
-    if (on) mv.currentTime = 0;
-    if (on || !reduceMotion) mv.play().catch(() => { });
-    else mv.pause();
-  };
-  mvButton.addEventListener("click", () => setSound(mv.muted));
-  mv.addEventListener("ended", () => setSound(false));
-  if (reduceMotion) mv.pause();
+    const setSound = (on) => {
+      mv.muted = !on;
+      mv.loop = !on;
+      hero.classList.toggle("mv-on", on);
+      mvButton.setAttribute("aria-pressed", String(on));
+      mvLabel.textContent = on ? "音を消す" : "音を出してMVを見る";
+      if (on) mv.currentTime = 0;
+      if (on || !reduceMotion) mv.play().catch(() => { });
+      else mv.pause();
+    };
+    mvButton.addEventListener("click", () => setSound(mv.muted));
+    mv.addEventListener("ended", () => setSound(false));
+    if (reduceMotion) mv.pause();
 
-  new IntersectionObserver(([e]) => {
-    if (!e.isIntersecting) {
-      if (!mv.muted) setSound(false);
-      mv.pause();
-    } else if (!reduceMotion) {
-      mv.play().catch(() => { });
-    }
-  }, { threshold: 0.2 }).observe(hero);
+    new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) {
+        if (!mv.muted) setSound(false);
+        mv.pause();
+      } else if (!reduceMotion) {
+        mv.play().catch(() => { });
+      }
+    }, { threshold: 0.2 }).observe(hero);
+  }
 
   /* ---------- 追従する購入バー（ヒーローと購入欄が見えている間は隠す） ---------- */
   const sticky = document.getElementById("sticky-cta");
